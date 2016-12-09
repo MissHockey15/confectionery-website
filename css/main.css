@@ -37,24 +37,18 @@ body {
   text-align: center;
 }
 
-.nav {
+.bottom-nav {
   position: relative;
-  background-color: #113c00;
-  z-index: 2;
 }
 
-.nav a {
-  display: inline-block;
+.bottom-nav a {
   padding: .5rem .75rem;
-
-  color: #fff;
-  text-decoration: none;
 }
 
 .nav a:hover,
 .nav a:focus {
-  background-color: #fff;
-  color: #113c00;
+  background-color: white;
+  color: black;
 }
 
 strong {
@@ -109,15 +103,44 @@ ul {
   width: 100%;
 }
 
-.about {
+.welcome {
   position: relative;
+  margin-bottom: 3rem;
 }
 
-.about-content {
+.welcome-content {
   bottom: 0;
   position: absolute;
   width: 100%;
   color:#fff;
+}
+
+.about-title {
+  padding-left: 1rem;
+}
+
+.about-box {
+  background-color: #a0a0a0;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+.welcome-text {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.img-flex {
+  margin-bottom: .5rem;
+}
+
+.prices {
+  background-color: #a0a0a0;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 @media only screen and (min-width: 25em) {
