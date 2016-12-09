@@ -14,7 +14,7 @@ html {
   background-image: url("../images/wrapper.svg");
   background-repeat: repeat;
   background-size: 60px;
-  font: normal 100%/1.3 'Questrial', sans-serif;
+  font: normal 100%/1.3 Questrial, sans-serif;
 }
 
 *, *::before, *::after {
@@ -40,7 +40,17 @@ body {
 }
 
 .bottom-nav a {
-  padding: .5rem .75rem;
+  padding: .75rem 1rem;
+}
+
+.bottom-nav li a:hover {
+  background-color: white;
+  color: black;
+}
+
+header .bottom-nav ol {
+  text-align: center;
+  background-color: #333;
 }
 
 .nav a:hover,
@@ -71,7 +81,7 @@ a {
   text-decoration: none;
   color: white;
   text-align: center;
-  background-color: #333
+  background-color: #333;
 }
 
 ul {
@@ -80,7 +90,7 @@ ul {
   margin: 0;
 }
 
-.nav-check {
+header .side-nav .nav-check {
   display: none;
 }
 
@@ -103,14 +113,16 @@ ul {
 
 .welcome {
   position: relative;
-  margin-bottom: 3rem;
 }
 
 .welcome-content {
-  bottom: 0;
   position: absolute;
   width: 100%;
   color: #fff;
+  text-align: center;
+  max-width: 45em;
+  display: block;
+  transform: translate(-1%, -250%);
 }
 
 .about-title {
@@ -128,10 +140,6 @@ ul {
 .welcome-text {
   padding-left: 3rem;
   padding-right: 3rem;
-}
-
-.img-flex {
-  margin-bottom: .5rem;
 }
 
 .prices {
