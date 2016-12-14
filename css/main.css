@@ -35,12 +35,26 @@ body {
   text-align: center;
 }
 
-.bottom-nav {
-  position: relative;
+a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  background-color: #333;
 }
 
 .bottom-nav a {
   padding: .75rem 1rem;
+}
+
+.nav a:hover,
+.nav a:focus {
+  background-color: white;
+  color: black;
+}
+
+.bottom-nav {
+  position: relative;
 }
 
 .bottom-nav li a:hover {
@@ -51,12 +65,6 @@ body {
 header .bottom-nav ol {
   text-align: center;
   background-color: #333;
-}
-
-.nav a:hover,
-.nav a:focus {
-  background-color: white;
-  color: black;
 }
 
 strong {
@@ -74,14 +82,6 @@ strong {
 
 .nav {
   display: none;
-}
-
-a {
-  display: block;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  background-color: #333;
 }
 
 ul {
@@ -120,8 +120,8 @@ header .side-nav .nav-check {
   width: 100%;
   color: #fff;
   text-align: center;
-  max-width: 45em;
-  display: block;
+  max-width: 100em;
+  display: inline-block;
   transform: translate(-1%, -250%);
 }
 
