@@ -55,6 +55,7 @@ a {
 
 .bottom-nav {
   position: relative;
+  display: none;
 }
 
 .bottom-nav li a:hover {
@@ -117,12 +118,11 @@ header .side-nav .nav-check {
 
 .welcome-content {
   position: absolute;
+  left: 0;
+  top: 15%;
   width: 100%;
   color: #fff;
   text-align: center;
-  max-width: 100em;
-  display: inline-block;
-  transform: translate(-1%, -250%);
 }
 
 .about-title {
@@ -154,16 +154,8 @@ footer {
   color: white;
 }
 
-@media only screen and (min-width: 25em) {
-
-  .bottom-nav {
-    display: none;
-  }
-
-  .side-nav {
-    display: block;
-  }
-
+.side-nav {
+  display: block;
 }
 
 @media only screen and (min-width: 38em) {
